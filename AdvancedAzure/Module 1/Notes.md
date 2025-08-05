@@ -181,3 +181,114 @@
 
 * Ask: *“Do you currently group your resources by environment, workload, or team?”*
 * Emphasize: *“Think of RGs as a way to manage resource **lifecycle**, not resource **security**.”*
+
+---
+
+### 🗂 **Slide 9: Azure Resource Manager Architecture**
+
+#### 🎙️ Speaker Notes:
+
+**Talking Points:**
+
+* "This diagram shows how the Azure platform is organized internally. At the heart of it is **Azure Resource Manager (ARM)**—the service that handles deployment, updates, and management for everything in Azure."
+* "When we use any tool—CLI, Portal, Bicep, PowerShell—it all eventually communicates through **ARM REST APIs** to interact with services."
+
+**Visual Walkthrough:**
+
+* "At the top, we have **workloads**—these are your applications and services, either built using IaaS (like VMs, storage, networking) or PaaS (like App Services, SQL, Cosmos DB)."
+* "ARM communicates with these services through **Resource Providers**—you can think of each provider as a plugin that knows how to handle a particular type of resource (like `Microsoft.Compute` for VMs or `Microsoft.Storage` for storage accounts)."
+* "All of this communication is standardized through ARM’s REST API layer."
+
+**Real-World Context:**
+
+* "If you’ve ever deployed a VM using the Portal and then used Bicep to deploy a second one, both are speaking to ARM in the same way—just different interfaces."
+* "Understanding this is important because once we start working with Bicep or automation pipelines, it’s helpful to know what’s happening behind the curtain."
+
+**Instructor Cues:**
+
+* Ask: *“Have you ever seen an error that says a resource provider wasn’t registered? That’s coming from this layer.”*
+* Reinforce: *“ARM makes the cloud programmable, consistent, and repeatable—this architecture powers everything we do in Azure.”*
+
+---
+
+### 🗂 **Slide 10: Resources and Dependencies**
+
+#### 🎙️ Speaker Notes:
+
+**Talking Points:**
+
+* "Here’s a visual example of what a **typical IaaS deployment** looks like in Azure."
+* "Notice how each resource—like the VM, network interface, load balancer, storage account—is connected and dependent on one another."
+
+**Visual Walkthrough:**
+
+* "Start at the **Virtual Machine** in the center. That VM needs a **NIC (network interface)** to connect to a **Virtual Network**, which has at least one **subnet**."
+* "It also needs a **storage account** for things like boot diagnostics and optionally **data disks**."
+* "If you’re load balancing traffic, your VM connects to a **Load Balancer**, which requires a **Public IP**."
+* "There are also **VM Extensions** that can install agents, monitoring tools, or configure the VM post-deployment."
+
+**Real-World Context:**
+
+* "In a Bicep template or Terraform script, these dependencies must be **declared or inferred** in the right order."
+* "ARM knows how to sequence the deployment when you specify dependencies—this is part of its power."
+
+**Instructor Cues:**
+
+* Ask: *“Looking at this diagram, what would happen if we tried to deploy the VM before the subnet or NIC existed?”*
+* Transition: *“In our upcoming lab, we’ll use the Portal to deploy a VM manually, but we’ll pay attention to each of these dependencies along the way.”*
+
+---
+
+### 🗂 **Slide 11: Resource Group Limits**
+
+#### 🎙️ Speaker Notes:
+
+**Talking Points:**
+
+* "Let’s talk about **resource group limits**—not to memorize them, but to be aware of what Azure allows by default."
+* "These numbers are designed for scale, but you’ll hit them faster than you think in large enterprise deployments or when deploying resources programmatically."
+
+**Highlight the Key Limits:**
+
+* "**800 resource groups** per subscription – that’s per sub, not per tenant."
+* "**800 resources per type per resource group** – for example, 800 VMs or 800 storage accounts in one RG."
+* "**15 tags per resource or RG** – this is important for governance and cost reporting."
+* "These limits are typically **soft limits**, and many can be increased through support requests—but not all."
+
+**Real-World Context:**
+
+* "In CI/CD pipelines, you might tear down and recreate RGs frequently—knowing the limits helps avoid deployment failures or sprawl."
+* "Tags are vital for cost attribution, especially in shared subscriptions. Use them wisely and consistently."
+
+**Instructor Cues:**
+
+* Ask: *“Has anyone ever hit a resource or subscription limit before?”*
+* Tip: *“Always check the current limits in Microsoft’s official documentation—they update periodically.”*
+* Reinforce: *“Limits shape your architecture, especially in multi-tenant environments or large-scale automation.”*
+
+---
+
+### 🗂 **Slide 12: Lab – Deploy a VM via the Portal Interface**
+
+#### 🎙️ Speaker Notes:
+
+**Talking Points:**
+
+* "Before we jump into Infrastructure as Code, let’s build something manually—so we understand what happens under the hood."
+* "This lab gives us a chance to **deploy a VM through the Azure Portal**, but I want you to watch for each of the **dependencies** we’ve just talked about."
+
+**Lab Scope:**
+
+* "You’ll create a new **resource group**, a **virtual network**, a **subnet**, a **network interface**, and then the **VM** itself."
+* "Azure will prompt you for these along the way, but think critically—what resource is required before another? What is Azure building for you in the background?"
+
+**Real-World Context:**
+
+* "In the real world, the portal is often used for quick testing, learning, or troubleshooting. But everything you build here can—and should—be recreated using IaC tools like Bicep or Terraform."
+* "Doing it manually once helps demystify what those templates are really doing."
+
+**Instructor Cues:**
+
+* Before starting the lab, ask: *“Can anyone name three dependencies needed before we can deploy a VM?”*
+* Optional challenge: *“As you complete the lab, write down the exact names of each resource Azure creates. We’ll refer back to them when we write Bicep code later.”*
+* Tip: *“If you get stuck, remember Azure gives you default options—but customizing them helps us understand architecture choices.”*
