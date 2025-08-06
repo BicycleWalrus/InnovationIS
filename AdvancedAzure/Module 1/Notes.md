@@ -1,6 +1,6 @@
-### 🗂 **Slide 1: What Is Azure?**
+### **Slide 1: What Is Azure?**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Opening Talking Points:**
 
@@ -19,9 +19,9 @@
 
 ---
 
-### 🗂 **Slide 2: The Azure Platform – A Global, Consistent Control Plane**
+### **Slide 2: The Azure Platform – A Global, Consistent Control Plane**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -39,9 +39,9 @@
 
 ---
 
-### 🗂 **Slide 3: How Azure Sees the World**
+### **Slide 3: How Azure Sees the World**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -59,9 +59,9 @@
 
 ---
 
-### 🗂 **Slide 4: Resources, Groups, and Scopes**
+### **Slide 4: Resources, Groups, and Scopes**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -80,9 +80,9 @@
 
 ---
 
-### 🗂 **Slide 5: Azure Resource Manager (ARM)**
+### **Slide 5: Azure Resource Manager (ARM)**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -103,9 +103,9 @@
 
 ---
 
-### 🗂 **Slide 6: Azure Resource Manager (ARM) – Additional Capabilities**
+### **Slide 6: Azure Resource Manager (ARM) – Additional Capabilities**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -126,7 +126,7 @@
 
 ---
 
-### 🗂 **Slide 7: Resource Groups**
+### **Slide 7: Resource Groups**
 
 **Slide Content Recap:**
 
@@ -134,7 +134,7 @@
 * Resource groups can contain resources from outside their region
 * Resources can be moved between resource groups
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -154,7 +154,7 @@
 
 ---
 
-### 🗂 **Slide 8: Resource Group Best Practices**
+### **Slide 8: Resource Group Best Practices**
 
 **Slide Content Recap:**
 
@@ -163,7 +163,7 @@
 * Resource groups can be heterogeneous or homogeneous
 * Resource groups are not a boundary of access
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -184,9 +184,9 @@
 
 ---
 
-### 🗂 **Slide 9: Azure Resource Manager Architecture**
+### **Slide 9: Azure Resource Manager Architecture**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -211,9 +211,9 @@
 
 ---
 
-### 🗂 **Slide 10: Resources and Dependencies**
+### **Slide 10: Resources and Dependencies**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -239,9 +239,9 @@
 
 ---
 
-### 🗂 **Slide 11: Resource Group Limits**
+### **Slide 11: Resource Group Limits**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -268,9 +268,9 @@
 
 ---
 
-### 🗂 **Slide 12: Lab – Deploy a VM via the Portal Interface**
+### **Slide 12: Lab – Deploy a VM via the Portal Interface**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
