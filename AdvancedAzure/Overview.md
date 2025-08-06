@@ -114,14 +114,13 @@
 
 ---
 
-## 📦 **Supporting Materials To Be Developed**
+## **Supporting Materials To Be Developed**
 
-* ✅ **Speaker Notes Rewrite** for each module with:
-
+* **Speaker Notes Rewrite** for each module with:
   * Key talking points
   * Real-world context
   * Sample questions
   * Demo cues and lab tie-ins
-* ✅ **All Labs Rewritten in Bicep**
-* ✅ **Instructor Demos** scripted (CLI + Portal variants)
-* ✅ **Optional Slide Updates** for visuals (networking, scale sets, etc.)
+* **All Labs Rewritten in Bicep**
+* **Instructor Demos** scripted (CLI + Portal variants)
+* **Optional Slide Updates** for visuals (networking, scale sets, etc.)
