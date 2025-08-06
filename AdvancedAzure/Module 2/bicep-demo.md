@@ -149,5 +149,3 @@ In this **Instructor Demo**, we will use Azure Cloud Shell to deploy a simple Az
 In this Instructor Demo, we used **Azure Cloud Shell** to deploy a parameterized Bicep template for a storage account. This included writing a Bicep file directly in the Cloud Shell environment, deploying via the Azure CLI, and verifying the results both via CLI and the Azure Portal. Using Cloud Shell simplifies tooling setup and helps focus on learning Bicep syntax and deployment flow.
 
 This demo lays the groundwork for students to perform a similar hands-on deployment in **Lab 1**.
-* Start working on the **slide deck content**?
-* Package everything into a **module delivery bundle**?
