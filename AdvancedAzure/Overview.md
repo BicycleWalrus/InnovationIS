@@ -1,10 +1,10 @@
-## 🔷 **Day 1 – Core Azure Services & Infrastructure as Code**
+## **Day 1 – Core Azure Services & Infrastructure as Code**
 
 > **Theme:** Modern cloud engineers must deploy confidently, automate securely, and reason about what Azure *does* under the hood—not just how to click through it.
 
 ---
 
-### 🔹 **Module 1: Azure Platform & Control Plane Orientation**
+### **Module 1: Azure Platform & Control Plane Orientation**
 
 * ARM as Azure's deployment engine
 * Resource groups, regions, subscriptions
@@ -14,7 +14,7 @@
 
 ---
 
-### 🔹 **Module 2: Infrastructure as Code – Intro to Bicep**
+### **Module 2: Infrastructure as Code – Intro to Bicep**
 
 * What is Bicep and why it replaced JSON
 * Anatomy of a Bicep file: parameters, variables, resources, outputs
@@ -24,7 +24,7 @@
 
 ---
 
-### 🔹 **Module 3: Networking Deep Dive – VNets, NSGs, Peering**
+### **Module 3: Networking Deep Dive – VNets, NSGs, Peering**
 
 * VNets, subnets, IP addressing, DNS options
 * NSGs, Application Security Groups, service tags
@@ -34,7 +34,7 @@
 
 ---
 
-### 🔹 **Module 4: Compute Patterns & VM Scale Sets**
+### **Module 4: Compute Patterns & VM Scale Sets**
 
 * VM types, availability sets vs zones, scale sets
 * Placement groups, autoscaling rules, lifecycle
@@ -43,7 +43,7 @@
 
 ---
 
-### 🔹 **Module 5: Storage Tiers, Types, and Blobs**
+### **Module 5: Storage Tiers, Types, and Blobs**
 
 * Blob, File, Table, Queue – when to use what
 * Premium vs Hot/Cool/Archive tiers
@@ -52,13 +52,13 @@
 
 ---
 
-## 🔷 **Day 2 – Identity, Applications, Monitoring, and Resilience**
+## **Day 2 – Identity, Applications, Monitoring, and Resilience**
 
 > **Theme:** Empowering secure access, designing for scale, and implementing observability across modern Azure architectures.
 
 ---
 
-### 🔹 **Module 6: Identity & Access with Microsoft Entra**
+### **Module 6: Identity & Access with Microsoft Entra**
 
 * Microsoft Entra overview (formerly Azure AD)
 * User types, groups, roles, and RBAC
@@ -68,7 +68,7 @@
 
 ---
 
-### 🔹 **Module 7: Azure App Services & Serverless Patterns**
+### **Module 7: Azure App Services & Serverless Patterns**
 
 * App Service, Container Apps, Azure Functions
 * Deployment slots, scaling models, CI/CD integration
@@ -77,7 +77,7 @@
 
 ---
 
-### 🔹 **Module 8: Durable Functions & Integration Patterns**
+### **Module 8: Durable Functions & Integration Patterns**
 
 * Durable Functions, bindings, orchestration vs activity
 * Event-driven architecture in Azure (Event Grid, Service Bus)
@@ -86,7 +86,7 @@
 
 ---
 
-### 🔹 **Module 9: Azure Monitor, Autoscale & Observability**
+### **Module 9: Azure Monitor, Autoscale & Observability**
 
 * Azure Monitor, Log Analytics, Application Insights
 * Metrics vs logs, autoscaling with custom triggers
@@ -95,7 +95,7 @@
 
 ---
 
-### 🔹 **Module 10: Resilient Architecture & Geo-Distributed Design**
+### **Module 10: Resilient Architecture & Geo-Distributed Design**
 
 * Traffic Manager, Azure Front Door, CDN
 * Global failover patterns and DNS routing
@@ -104,7 +104,7 @@
 
 ---
 
-### 🔹 **Final Wrap-Up: Capstone and Q\&A**
+### **Final Wrap-Up: Capstone and Q\&A**
 
 * Tie back to Day 1 & 2 concepts
 * Group discussion: “Design a resilient Azure app for a real use case”
