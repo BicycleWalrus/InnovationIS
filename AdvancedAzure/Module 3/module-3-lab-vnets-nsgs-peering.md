@@ -27,7 +27,7 @@ By the end of this lab, learners will have created, extended, and connected two 
     - Choose **Bash** if prompted.
     - Wait for the Cloud Shell to fully initialize.
 
-0. Create a Resource Group for your storage account. Replace `<your-initials>` with your **own initials** to make the name unique.
+0. Create a Resource Group for your network. Replace `<your-initials>` with your **own initials** to make the name unique.
 
     `student1 [ ~ ]$` `az group create --name progressive-network-<your-initials> --location eastus`
 
