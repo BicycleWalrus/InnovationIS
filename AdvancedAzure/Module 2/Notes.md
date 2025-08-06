@@ -1,6 +1,6 @@
-### 🗂 **Slide 1: Infrastructure as Code – Intro to Bicep**
+### **Slide 1: Infrastructure as Code – Intro to Bicep**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Opening Talking Points:**
 
@@ -24,9 +24,9 @@
 
 ---
 
-### 🗂 **Slide 2: Why IaC Matters in Azure**
+### **Slide 2: Why IaC Matters in Azure**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -49,9 +49,9 @@
 
 ---
 
-### 🗂 **Slide 3: Azure’s First IaC Language: ARM JSON**
+### **Slide 3: Azure’s First IaC Language: ARM JSON**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -70,9 +70,9 @@
 
 ---
 
-### 🗂 **Slide 4: Enter Bicep – A Better Way to Deploy**
+### **Slide 4: Enter Bicep – A Better Way to Deploy**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -95,9 +95,9 @@
 
 ---
 
-### 🗂 **Slide 5: Declarative vs. Imperative**
+### **Slide 5: Declarative vs. Imperative**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
@@ -121,9 +121,9 @@
 
 ---
 
-### 🗂 **Slide 6: Recap – Why Bicep?**
+### **Slide 6: Recap – Why Bicep?**
 
-#### 🎙️ Speaker Notes:
+#### Speaker Notes:
 
 **Talking Points:**
 
